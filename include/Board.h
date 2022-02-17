@@ -15,8 +15,8 @@ public:
 
 	bool readLevelData(DataBase&);
 	void readLevel(DataBase &);
-	sf::Vector2f getBoardSize() { return m_boardSize; }
-	int getLevelTime() { return m_timeLimit; }
+	sf::Vector2f getBoardSize()const { return m_boardSize; }
+	int getLevelTime() const { return m_timeLimit; }
 	void TakeBackInputStreamToBegLevel();
 	void TakeBackInputStreamToPrevLevel();
 	void resetInputStream();
