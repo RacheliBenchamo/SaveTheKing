@@ -101,13 +101,13 @@ void FileManager::loadBackgrounds()
 }
 //--------------------------------------------
 
-sf::SoundBuffer* FileManager::getSound(sounds sound)
+const sf::SoundBuffer* FileManager::getSound(sounds sound)const
 {
 	return &this->m_audio[(int)sound];
 }
 //--------------------------------------------------
 
-sf::Texture* FileManager::getMusicIcon(bool musicOn)
+const sf::Texture* FileManager::getMusicIcon(bool musicOn)const
 {
 	if (musicOn)
 		return &this->m_musicTexture[0];
@@ -116,7 +116,7 @@ sf::Texture* FileManager::getMusicIcon(bool musicOn)
 }
 //--------------------------------------------------
 
-sf::Texture* FileManager::getPlayAndStopIcon(bool toPlay)
+const sf::Texture* FileManager::getPlayAndStopIcon(bool toPlay)const
 {
 	if (toPlay)
 		return &this->m_playStopTexture[1];
@@ -125,25 +125,25 @@ sf::Texture* FileManager::getPlayAndStopIcon(bool toPlay)
 }
 //--------------------------------------------------
 
-sf::Texture* FileManager::getRestartIcon()
+const sf::Texture* FileManager::getRestartIcon()const
 {
 		return &this->m_restartIcon;
 }
 //--------------------------------------------------
 
-const sf::Texture* FileManager::getBackGround(backgroundsType place)
+const sf::Texture* FileManager::getBackGround(backgroundsType place)const
 {
 	return &this->m_backgrounds[place];
 }
 //--------------------------------------------------
 
-const sf::Texture* FileManager::getIconTexture(icons place)
+const sf::Texture* FileManager::getIconTexture(icons place)const
 {
 	return &this->m_icons[place];
 }
 //--------------------------------------------------
 
-sf::Font* FileManager::getFont()
+const sf::Font* FileManager::getFont()const
 {
 	return &this->m_font;
 }

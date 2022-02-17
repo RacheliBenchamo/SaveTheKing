@@ -11,13 +11,13 @@ public:
 	~FileManager() {};
 	static FileManager& p2FileManager();
 
-	const sf::Texture* getIconTexture(icons );
-	sf::Texture* getPlayAndStopIcon(bool );
-    sf::SoundBuffer* getSound(sounds);
-	sf::Texture* getMusicIcon(bool);
-	sf::Texture* getRestartIcon();
-	const sf::Texture* getBackGround(backgroundsType);
-	sf::Font* getFont();
+	const sf::Texture* getIconTexture(icons )const;
+	const sf::Texture* getPlayAndStopIcon(bool )const;
+	const sf::SoundBuffer* getSound(sounds)const;
+	const sf::Texture* getMusicIcon(bool)const;
+	const sf::Texture* getRestartIcon()const;
+	const sf::Texture* getBackGround(backgroundsType)const;
+	const sf::Font* getFont()const;
 
 private:
 	FileManager();
