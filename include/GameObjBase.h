@@ -29,7 +29,7 @@ public:
 	GameObjBase(icons , int, int);
 	virtual ~GameObjBase() {};
 
-	sf::Sprite getSprite() { return m_sprite; }
+	sf::Sprite getSprite() const{ return m_sprite; }
 	void setSprite(sf::Sprite sprite) { m_sprite = sprite;  }
 	virtual void draw(sf::RenderWindow& );
 	virtual bool checkCollision(const GameObjBase& );
@@ -37,7 +37,6 @@ public:
 	void setPos(const sf::Vector2f&);
 	float getIconWidth() const;
 	float getIconHeight() const;
-	sf::Sprite getSprite() const;
 	sf::Vector2f getScale() const;
 	
 	virtual void handleCollision(GameObjBase& )  = 0;

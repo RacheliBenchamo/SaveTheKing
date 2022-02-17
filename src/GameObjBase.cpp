@@ -54,13 +54,6 @@ float GameObjBase::getIconHeight() const
 	return m_sprite.getGlobalBounds().height;
 }
 //--------------------------------------------------
-//get the sprite
-
-sf::Sprite GameObjBase::getSprite() const
-{
-	return sf::Sprite();
-}
-//--------------------------------------------------
 
 bool GameObjBase::checkCollision(const GameObjBase& obj)
 {

@@ -41,7 +41,7 @@ public:
     bool takeCurrGift(giftType g) { return m_takeGifts[g]; }
     bool winLevel();
     void eraseObj();
-    icons getCurrPlayer() { return m_currPlayer; }
+    icons getCurrPlayer()const { return m_currPlayer; }
     void setCurrPlayer(icons currPlayer) { m_currPlayer = currPlayer; }
     void setGiftsWithTime(bool b) { m_GiftsWithTime = b; }
 
