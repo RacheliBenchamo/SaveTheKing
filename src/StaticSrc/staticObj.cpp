@@ -23,7 +23,7 @@ void StaticObj::setDelete()
 }
 //--------------------------------------------------
 
-bool StaticObj::getToReplace()
+bool StaticObj::getToReplace()const
 {
 	return m_replace;
 }
@@ -35,7 +35,7 @@ void StaticObj::setReplace()
 }
 //--------------------------------------------------
 
-bool StaticObj::getToDelete()
+bool StaticObj::getToDelete()const
 {
 	return m_delete;
 }

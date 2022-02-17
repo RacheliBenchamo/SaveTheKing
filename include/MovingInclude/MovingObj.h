@@ -9,8 +9,8 @@ public:
 	MovingObj(icons, int, int);
 	~MovingObj() {};
 
-	sf::Vector2f getPrevPos() { return m_prevPos; }
-	sf::Vector2f getCurrDir() { return m_currDirection; }
+	sf::Vector2f getPrevPos() const{ return m_prevPos; }
+	sf::Vector2f getCurrDir()const { return m_currDirection; }
 	void backToPrevPos();
 	virtual void handleCollision(GameObjBase&) override =0;
 	virtual void handleCollision(Wall&) override {};

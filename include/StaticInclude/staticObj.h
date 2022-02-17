@@ -15,9 +15,9 @@ class StaticObj :public GameObjBase
 public:
 	    StaticObj(icons , int, int);
 		virtual void startSound() = 0;
-		virtual bool getToDelete();
+		virtual bool getToDelete()const;
 		virtual void setDelete();
-		virtual bool getToReplace();
+		virtual bool getToReplace()const;
 		virtual void setReplace();
 
 		virtual void handleCollision(GameObjBase&) override = 0;
