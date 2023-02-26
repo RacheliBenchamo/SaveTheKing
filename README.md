@@ -1,4 +1,6 @@
-# SAVE THE KING
+# Save The King
+
+## Ahutors : Racheli Benchamo & Yarden Cohen
 
 The game has four players, and the current player can be moved using the arrow keys.
 To switch to the next player, press the "P" key. The goal of the game is to bring 
